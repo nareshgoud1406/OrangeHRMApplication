@@ -1,0 +1,63 @@
+[TestNG-tests-2] INFO Log - Expected AddEmployeePageText is   = Full Name
+[TestNG-tests-2] INFO Log - Expected AddEmployeePageText is   = Full Name
+[TestNG-tests-2] INFO Log - Expected AddEmployeePageText is matching with Actaul AddEmployeePageText-PASS
+[TestNG-tests-2] INFO Log - ---------------------------------------------------------------------------------------------
+[TestNG-tests-2] INFO Log - First Name of the employee added -Srini01
+[TestNG-tests-2] INFO Log - Middle Name of the employee added -Hello01
+[TestNG-tests-2] INFO Log - Last name of the employee added -HI01
+[TestNG-tests-2] INFO Log - employee Id is 0171
+[TestNG-tests-2] INFO Log - Actual personal details page text is matching with Expected personal details page-PASS
+[TestNG-tests-2] INFO Log - Actual employeeId is 0171
+[TestNG-tests-2] INFO Log - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+[TestNG-tests-2] INFO Log - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+[TestNG-tests-2] INFO Log - First Name of the employee added -naresh
+[TestNG-tests-2] INFO Log - Middle Name of the employee added -naresh
+[TestNG-tests-2] INFO Log - Last name of the employee added -naresh
+[TestNG-tests-2] INFO Log - employee Id is 0172
+[TestNG-tests-2] INFO Log - Actual personal details page text is matching with Expected personal details page-PASS
+[TestNG-tests-2] INFO Log - Actual employeeId is 0172
+[TestNG-tests-2] INFO Log - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+[TestNG-tests-2] INFO Log - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+[TestNG-tests-2] INFO Log - First Name of the employee added -mumbai
+[TestNG-tests-2] INFO Log - Middle Name of the employee added -mumbai
+[TestNG-tests-2] INFO Log - Last name of the employee added -mumbai
+[TestNG-tests-2] INFO Log - employee Id is 0173
+[TestNG-tests-2] INFO Log - Actual personal details page text is matching with Expected personal details page-PASS
+[TestNG-tests-2] INFO Log - Actual employeeId is 0173
+[TestNG-tests-2] INFO Log - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+[TestNG-tests-2] INFO Log - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+[TestNG-tests-2] INFO Log - First Name of the employee added -delhi
+[TestNG-tests-2] INFO Log - Middle Name of the employee added -delhi
+[TestNG-tests-2] INFO Log - Last name of the employee added -delhi
+[TestNG-tests-2] INFO Log - employee Id is 0174
+[TestNG-tests-2] INFO Log - Actual personal details page text is matching with Expected personal details page-PASS
+[TestNG-tests-2] INFO Log - Actual employeeId is 0174
+[TestNG-tests-2] INFO Log - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+[TestNG-tests-2] INFO Log - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+[TestNG-tests-2] INFO Log - First Name of the employee added -hyderabad
+[TestNG-tests-2] INFO Log - Middle Name of the employee added -hyderabad
+[TestNG-tests-2] INFO Log - Last name of the employee added -hyderabad
+[TestNG-tests-2] INFO Log - employee Id is 0175
+[TestNG-tests-2] INFO Log - Actual personal details page text is matching with Expected personal details page-PASS
+[TestNG-tests-2] INFO Log - Actual employeeId is 0175
+[TestNG-tests-2] INFO Log - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+[TestNG-tests-2] INFO Log - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+[TestNG-tests-2] INFO Log - Expected text of the current Webpage after Log out is  = LOGIN Panel
+[TestNG-tests-2] INFO Log - The actual text of the login web page is MATCHING with the expected title after logout -PASS 
+[main] INFO Log - Expected text of the current Webpage is  = LOGIN Panel
+[main] INFO Log - Actual text of the current Webpage is = LOGIN Panel
+[main] INFO Log - The actual text of the login web page is MATCHING with the expected text -PASS 
+[main] INFO Log - ------------------------------------------------------------------
+[main] INFO Log - Username of invalid test data is   = srini
+[main] INFO Log - Password of invalid test data is   = Q@Trainer7
+[main] INFO Log - Actual login page text after invalid test data -Invalid credentials
+[main] INFO Log - Expected login page text after invalid test data -Invalid credentials
+[main] INFO Log - Login with invalid is done and it is not directed to homepage-PASS
+[main] INFO Log - ------------------------------------------------------------------
+[main] INFO Log - valid username given as nareshgoudmetri
+[main] INFO Log - valid username given as Naresh@1406
+[main] INFO Log - ------------------------------------------------------------------
+[main] INFO Log - Actual tile of the Homepage is  -Welcome Admin
+[main] INFO Log - Expected tile of the Homepage is  -Welcome
+[main] INFO Log - The actual title of the Home page is CONTAINSthe expected title -PASS 
+[main] INFO Log - ------------------------------------------------------------------

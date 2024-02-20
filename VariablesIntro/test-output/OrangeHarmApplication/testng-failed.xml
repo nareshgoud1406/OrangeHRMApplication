@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [OrangeHarmApplication]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="AddEmployeeTest(failed)">
+    <classes>
+      <class name="com.OrangreHRM_with_TestNG.AddEmployeeDetails">
+        <methods>
+          <include name="loginPageTextValidation"/>
+          <include name="verification_loginPage_AfterLogout"/>
+          <include name="applicationLaunch"/>
+          <include name="addEmployeePageDirections"/>
+          <include name="addEmployeeDetails_Multiple_Data"/>
+          <include name="applicationClose"/>
+          <include name="loginWithData"/>
+        </methods>
+      </class> <!-- com.OrangreHRM_with_TestNG.AddEmployeeDetails -->
+    </classes>
+  </test> <!-- AddEmployeeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="LoginTest(failed)">
+    <classes>
+      <class name="com.OrangreHRM_with_TestNG.LoginValidationsWithTestNG">
+        <methods>
+          <include name="loginPageTextValidation"/>
+          <include name="applicationLaunch"/>
+          <include name="applicationClose"/>
+          <include name="loginWithData"/>
+        </methods>
+      </class> <!-- com.OrangreHRM_with_TestNG.LoginValidationsWithTestNG -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [OrangeHarmApplication] -->

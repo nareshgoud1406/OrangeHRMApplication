@@ -1,0 +1,46 @@
+package com.Arrays;
+
+public class ObjectArrays {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Object array[]=new Object[5]; 
+		
+		array[0]=10;		//int
+		array[1]="Ten";		//string
+		array[2]=true;		//boolean
+		array[3]=50.787877;	//double
+		array[4]=40.67776f;	//float
+		
+		for(int index=0;index<array.length;index++)
+		{
+			System.out.println(array[index]);
+		}
+		System.out.println("#######################################################");
+		System.out.println();
+		
+		
+		//############### MULTI DIMENSIONAL  OBJECT ARRAYS #####################
+		
+		Object array1[][]=new Object[2][2];
+		
+		array1[0][0]="we can store diffrent type of data type values in a single array ";
+		array1[0][1]="Using Object Arrays ";
+		array1[1][0]=500;
+		array1[1][1]='A';
+		
+		for(int rowIndex=0;rowIndex<2;rowIndex++)
+		{
+			
+			for(int rowOfCell=0;rowOfCell<2;rowOfCell++)
+			{
+				System.out.println(array1[rowIndex][rowOfCell]);
+			}
+		}
+		
+
+	}
+
+}

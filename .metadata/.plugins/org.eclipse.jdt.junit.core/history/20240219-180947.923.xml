@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="OrangHRM_Cucumber" tests="4" started="4" failures="0" errors="2" ignored="3">
+  <testsuite name="com.StepDefination.TestRunner" time="0.041">
+    <testsuite name="Feature: OrangeHRM Application Functionalities Testing" time="0.041">
+      <testsuite name="Scenario: Validating OrangHRM Application LogIn Page" time="0.011" incomplete="true">
+        <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.StepDefination.OrangeHRMApplicationUserDefinedMethods.user_should_open_browser_in_the_system(OrangeHRMApplicationUserDefinedMethods.java:13)&#13;
+	at ✽.Given User should open Browser in the System(OrangeHRMApplication.feature:5)&#13;
+&#13;
+</error>
+        <testcase name="Given User should open Browser in the System" classname="Scenario: Validating OrangHRM Application LogIn Page" time="0.01">
+          <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.StepDefination.OrangeHRMApplicationUserDefinedMethods.user_should_open_browser_in_the_system(OrangeHRMApplicationUserDefinedMethods.java:13)&#13;
+	at ✽.Given User should open Browser in the System(OrangeHRMApplication.feature:5)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User enters OrangeHRM Application URL Address" classname="Scenario: Validating OrangHRM Application LogIn Page" time="0.003" ignored="true"/>
+        <testcase name="Then User should be navigated to OrangeHRM Application LogIn WebPage" classname="Scenario: Validating OrangHRM Application LogIn Page" time="0.001" ignored="true"/>
+        <testcase name="Then User should close the OrangeHRM Application along with the browser" classname="Scenario: Validating OrangHRM Application LogIn Page" time="0.015" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

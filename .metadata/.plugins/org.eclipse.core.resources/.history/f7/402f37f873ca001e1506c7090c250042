@@ -1,0 +1,8 @@
+#OrangeHRMApplication UserName Element Property with Id locator
+orangeHRMLoginpageUsernameProperty=txtUsername
+#---------------------------------------------------------------------
+
+#OrangeHRMApplication Password  Element Property with name locator
+orangeHRMLoginpageUsernameProperty=txtUsername
+
+

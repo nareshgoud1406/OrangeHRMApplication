@@ -1,0 +1,28 @@
+#By loginPanelProperty=By.id("logInPanelHeading");
+#	By loginProperty=By.id("btnLogin");
+
+#By spanMessegeProperty=By.id("spanMessage");
+#By welcomeAdminProperty=By.linkText("Welcome Admin");
+
+
+
+
+
+#OrangeHRMApplication UserName Element Property with Id locator
+orangeHRMLoginpageUsernameProperty=txtUsername
+#---------------------------------------------------------------------
+
+#OrangeHRMApplication Password  Element Property with Id locator
+orangeHRMLoginpageUsernameProperty=txtUsername
+
+
+#OrangeHRMApplication Login Button Element Property with Id locator
+orangeHRMLoginpageLoginButtonProperty=btnLogin
+
+#OrangeHRMApplication SpanMessege Element Property with Id locator
+orangeHRMLoginpageSpanMessegeProperty=spanMessage
+
+#OrangeHRMApplication WelcomeAdmin Element Property with linlText locator
+orangeHRMHomepageWelcomeAdminProperty=Welcome Admin
+
+

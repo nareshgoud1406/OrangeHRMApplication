@@ -1,0 +1,63 @@
+2024-02-14 19:35:25,864 - Log -INFO - Expected AddEmployeePageText is   = Full Name
+2024-02-14 19:35:25,871 - Log -INFO - Expected AddEmployeePageText is   = Full Name
+2024-02-14 19:35:25,873 - Log -INFO - Expected AddEmployeePageText is matching with Actaul AddEmployeePageText-PASS
+2024-02-14 19:35:25,876 - Log -INFO - ---------------------------------------------------------------------------------------------
+2024-02-14 19:35:26,010 - Log -INFO - First Name of the employee added -Srini01
+2024-02-14 19:35:26,149 - Log -INFO - Middle Name of the employee added -Hello01
+2024-02-14 19:35:26,405 - Log -INFO - Last name of the employee added -HI01
+2024-02-14 19:35:26,523 - Log -INFO - employee Id is 0171
+2024-02-14 19:35:31,434 - Log -INFO - Actual personal details page text is matching with Expected personal details page-PASS
+2024-02-14 19:35:31,742 - Log -INFO - Actual employeeId is 0171
+2024-02-14 19:35:31,744 - Log -INFO - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+2024-02-14 19:35:31,762 - Log -INFO - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+2024-02-14 19:35:34,370 - Log -INFO - First Name of the employee added -naresh
+2024-02-14 19:35:34,533 - Log -INFO - Middle Name of the employee added -naresh
+2024-02-14 19:35:34,716 - Log -INFO - Last name of the employee added -naresh
+2024-02-14 19:35:34,783 - Log -INFO - employee Id is 0172
+2024-02-14 19:35:37,250 - Log -INFO - Actual personal details page text is matching with Expected personal details page-PASS
+2024-02-14 19:35:37,599 - Log -INFO - Actual employeeId is 0172
+2024-02-14 19:35:37,601 - Log -INFO - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+2024-02-14 19:35:37,602 - Log -INFO - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+2024-02-14 19:35:39,493 - Log -INFO - First Name of the employee added -mumbai
+2024-02-14 19:35:39,688 - Log -INFO - Middle Name of the employee added -mumbai
+2024-02-14 19:35:39,842 - Log -INFO - Last name of the employee added -mumbai
+2024-02-14 19:35:39,877 - Log -INFO - employee Id is 0173
+2024-02-14 19:35:42,110 - Log -INFO - Actual personal details page text is matching with Expected personal details page-PASS
+2024-02-14 19:35:42,343 - Log -INFO - Actual employeeId is 0173
+2024-02-14 19:35:42,345 - Log -INFO - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+2024-02-14 19:35:42,346 - Log -INFO - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+2024-02-14 19:35:44,193 - Log -INFO - First Name of the employee added -delhi
+2024-02-14 19:35:44,304 - Log -INFO - Middle Name of the employee added -delhi
+2024-02-14 19:35:44,439 - Log -INFO - Last name of the employee added -delhi
+2024-02-14 19:35:44,500 - Log -INFO - employee Id is 0174
+2024-02-14 19:35:47,254 - Log -INFO - Actual personal details page text is matching with Expected personal details page-PASS
+2024-02-14 19:35:47,487 - Log -INFO - Actual employeeId is 0174
+2024-02-14 19:35:47,510 - Log -INFO - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+2024-02-14 19:35:47,513 - Log -INFO - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+2024-02-14 19:35:49,348 - Log -INFO - First Name of the employee added -hyderabad
+2024-02-14 19:35:49,474 - Log -INFO - Middle Name of the employee added -hyderabad
+2024-02-14 19:35:49,592 - Log -INFO - Last name of the employee added -hyderabad
+2024-02-14 19:35:49,635 - Log -INFO - employee Id is 0175
+2024-02-14 19:35:51,903 - Log -INFO - Actual personal details page text is matching with Expected personal details page-PASS
+2024-02-14 19:35:52,119 - Log -INFO - Actual employeeId is 0175
+2024-02-14 19:35:52,122 - Log -INFO - Actual Employee Id is matching with Expected Expected Employee Id-PASS
+2024-02-14 19:35:52,123 - Log -INFO - Actual Employee firstNamme is  matching with Expected Expected Employee fiestname -PASS
+2024-02-14 19:36:00,550 - Log -INFO - Expected text of the current Webpage after Log out is  = LOGIN Panel
+2024-02-14 19:36:00,673 - Log -INFO - The actual text of the login web page is MATCHING with the expected title after logout -PASS 
+2024-02-14 19:39:52,134 - Log -INFO - Expected text of the current Webpage is  = LOGIN Panel
+2024-02-14 19:39:52,274 - Log -INFO - Actual text of the current Webpage is = LOGIN Panel
+2024-02-14 19:39:52,295 - Log -INFO - The actual text of the login web page is MATCHING with the expected text -PASS 
+2024-02-14 19:39:52,301 - Log -INFO - ------------------------------------------------------------------
+2024-02-14 19:39:52,336 - Log -INFO - Username of invalid test data is   = srini
+2024-02-14 19:39:52,528 - Log -INFO - Password of invalid test data is   = Q@Trainer7
+2024-02-14 19:39:53,792 - Log -INFO - Actual login page text after invalid test data -Invalid credentials
+2024-02-14 19:39:53,795 - Log -INFO - Expected login page text after invalid test data -Invalid credentials
+2024-02-14 19:39:53,796 - Log -INFO - Login with invalid is done and it is not directed to homepage-PASS
+2024-02-14 19:39:53,801 - Log -INFO - ------------------------------------------------------------------
+2024-02-14 19:39:53,986 - Log -INFO - valid username given as nareshgoudmetri
+2024-02-14 19:39:54,122 - Log -INFO - valid username given as Naresh@1406
+2024-02-14 19:40:03,366 - Log -INFO - ------------------------------------------------------------------
+2024-02-14 19:40:03,458 - Log -INFO - Actual tile of the Homepage is  -Welcome Admin
+2024-02-14 19:40:03,460 - Log -INFO - Expected tile of the Homepage is  -Welcome
+2024-02-14 19:40:03,462 - Log -INFO - The actual title of the Home page is CONTAINSthe expected title -PASS 
+2024-02-14 19:40:03,469 - Log -INFO - ------------------------------------------------------------------

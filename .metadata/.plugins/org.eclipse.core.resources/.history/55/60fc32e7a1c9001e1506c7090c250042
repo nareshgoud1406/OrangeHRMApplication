@@ -1,0 +1,35 @@
+package AutoItIntro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class Add_with_Keyboard_Actions_Class extends BaseTest {
+
+@Test(priority=1)	
+public void addEmployeedetails() throws InterruptedException	
+{
+
+	By UsernameProperty=By.id("txtUsername");
+	WebElement Username=driver.findElement(UsernameProperty);
+	Username.sendKeys("nareshgoudmetri");
+	Actions keyboardActions=new Actions(driver);
+	keyboardActions.sendKeys(Keys.TAB).build().perform();
+	Thread.sleep(20000);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+	
+	
+
+}

@@ -1,0 +1,44 @@
+package com.Excel;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Excel {
+	FileInputStream testDataFile;
+	XSSFWorkbook workbook;
+	XSSFSheet sheet;
+	
+	public Excel ExcelRead=new Excel();
+	
+public void ExcelRead(String Location,String SheetNo,int Rownumber,int Cellnumber  ) throws IOException 
+{
+	
+	 testDataFile =new FileInputStream(Location);
+	 workbook = new XSSFWorkbook(testDataFile);
+	 sheet = workbook.getSheet(SheetNo);
+	Row ActiveRow=sheet.getRow(Rownumber);
+	Cell ActiveRowOfCell=ActiveRow.getCell(Cellnumber);
+	String CellValue=ActiveRowOfCell.getStringCellValue();
+	System.out.println(CellValue);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+}

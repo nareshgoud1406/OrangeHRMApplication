@@ -1,0 +1,70 @@
+package Practice;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class login_multiple {
+	
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Dell\\Desktop\\Javaselenium\\VariablesIntro\\Resources\\chromedriver.exe");
+				
+				String ApplicationURLAddress= "http://127.0.0.1/orangehrm-4.2.0.1/symfony/web/index.php/auth/login";
+				
+			//Assigning URL to a variable to pass Dynamically.......................................... 
+				
+						ChromeDriver driver = new ChromeDriver(); 
+						driver.get(ApplicationURLAddress);
+						
+						
+		
+		
+		//#################### Aditional code For Getting/Reading  data from Excel ############################	
+						
+					FileInputStream testDataFile =new FileInputStream("./src/com/OrangeHRM/LoginTestData.xlsx");
+					XSSFWorkbook workbook =new XSSFWorkbook(testDataFile);
+					XSSFSheet sheet = workbook.getSheet("Sheet1");
+					Row testDataSheetRow =sheet.getRow(1);
+					Cell testDataSheetRowofCell =testDataSheetRow.getCell(0);
+					String usernameTestData=testDataSheetRowofCell.getStringCellValue();
+					
+					By usernameProperty=By.id("txtUsername");
+					WebElement username=driver.findElement(usernameProperty);
+					username.sendKeys(usernameTestData);
+					
+		//#####################################################################################################
+					
+						//<input name="txtPassword" id="txtPassword" autocomplete="off" type="password">
+					
+					
+					Cell PasswordRowofCell=testDataSheetRow.getCell(1);
+					String passwordTestData=PasswordRowofCell.getStringCellValue();
+					By passwordProperty=By.id("txtPassword");
+					WebElement password=driver.findElement(passwordProperty);
+					password.sendKeys(passwordTestData);
+					
+					//<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+					
+					
+					 By loginProperty=By.className("button");
+					 WebElement login=driver.findElement(loginProperty);
+					 login.click();
+					
+								
+		//#####################Creating only row of cell and writing #####################################
+				//Row newrow =sheet.createRow(1);	
+				Cell newrowofcell=testDataSheetRow.createCell(2);
+				newrowofcell.setCellValue("Login is Done and it is redirected to Dashboard");
+					
+
+	
+
+}

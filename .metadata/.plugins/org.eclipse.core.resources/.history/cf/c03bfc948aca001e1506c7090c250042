@@ -1,0 +1,16 @@
+<suite name="OrangeHarmApplication" parallel="tests">
+<test name="LoginTest">
+
+ <classes>
+           <class name="com.OrangreHRM_with_TestNG.LoginValidationsWithTestNG.java"/>
+        </classes>
+   </test>
+   
+   
+   <test name="AddEmployeeTest">
+        <classes>
+           <class name="com.OrangreHRM_with_TestNG.AddEmployeeDetails.java"/>
+        </classes>
+
+</test>
+</suite>

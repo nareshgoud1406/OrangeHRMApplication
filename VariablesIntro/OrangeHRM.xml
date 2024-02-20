@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHarmApplication" parallel="tests">
+<test name="LoginTest">
+
+ <classes>
+           <class name="com.OrangreHRM_with_TestNG.LoginValidationsWithTestNG"/>
+        </classes>
+   </test>
+   
+   
+   <test name="AddEmployeeTest">
+        <classes>
+           <class name="com.OrangreHRM_with_TestNG.AddEmployeeDetails"/>
+        </classes>
+
+</test>
+</suite>

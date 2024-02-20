@@ -1,0 +1,62 @@
+package com.RadioButtons;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class RadioBurrons_testing extends BaseTest_EchoEchoApplication{
+
+	@Test
+	public void group1RadioButtonsTesting() throws InterruptedException
+	{
+	/*
+	<input type="radio" name="group1" value="Milk">
+	<input type="radio" name="group1" value="Butter" checked="">
+	<input type="radio" name="group1" value="Cheese">
+
+	<input type="radio" name="group2" value="Water">
+	<input type="radio" name="group2" value="Beer">
+	<input type="radio" name="group2" value="Wine" checked="">
+	*/
+
+	// System.out.println(" Application Functionality Testing ");
+
+
+	By radioButtonTableProperty=By.className("table5");
+	WebElement RadioTable=driver.findElement(radioButtonTableProperty);
+	By evryRadioButonProperty=By.tagName("input");
+	List<WebElement>RadioButtons=RadioTable.findElements(radioButtonTableProperty);
+	
+	 int radioButtonsCount=RadioButtons.size();
+	
+	for(int radioButtonClick=0;radioButtonClick<radioButtonsCount;radioButtonClick++)
+	{
+	String radioButtonName=RadioButtons.get(radioButtonClick).getAttribute("value");
+	System.out.println(radioButtonName);
+
+	RadioButtons.get(radioButtonClick).click();
+
+
+	//Thread.sleep(10000);
+
+	// Getting the Status of the Radio Buttons
+	for(int radioButtonsStatus=0;radioButtonsStatus<radioButtonsCount;radioButtonsStatus++ )
+	{
+	System.out.println(RadioButtons.get(radioButtonsStatus).getAttribute("value")+" - "+ RadioButtons.get(radioButtonsStatus).getAttribute("checked"));
+	}
+	}
+
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,184 @@
+package com.OrangeHRMApplicationTestCases;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+
+
+
+public class LoginFunctionality extends BaseTest {
+		
+		FileInputStream testDataFile;
+		XSSFSheet sheet;
+	 	XSSFWorkbook workbook;
+	 	
+	 	@Test(priority=1)
+		public void loginPageTextValidation() throws IOException
+		{
+				
+			
+			 	testDataFile =new FileInputStream("./src/main/java/com/OrangeHRMApplicationTestDataFiles/AddEmployeeTestSheet.xlsx");
+			 	workbook =new XSSFWorkbook(testDataFile);
+			 	sheet = workbook.getSheet("Sheet1"); 
+				Row TestDataRow=sheet.getRow(1);
+				Cell TestDataRowofCell=TestDataRow.getCell(0);
+				String expectedTexteOfLoginPage=TestDataRowofCell.getStringCellValue();			
+				System.out.println("Expected text of the current Webpage is "+" = " +expectedTexteOfLoginPage);
+				
+				//<div id="logInPanelHeading">LOGIN Panel</div>
+				By loginPanelProperty=By.id("logInPanelHeading");
+				WebElement loginpaneltext=driver.findElement(loginPanelProperty);
+				String actualTextOfLoginPage=loginpaneltext.getText();
+				
+				 System.out.println("Actual text of the current Webpage is "+"= "+actualTextOfLoginPage);
+				 TestDataRow.createCell(1).setCellValue(actualTextOfLoginPage);
+				 
+				 
+		     
+			if(actualTextOfLoginPage.equals(expectedTexteOfLoginPage))
+			{
+				
+				System.out.println("The actual text of the login web page is MATCHING with the expected text -PASS ");
+				String LoginPageTextReults="PASS";
+				TestDataRow.createCell(2).setCellValue(LoginPageTextReults);
+				
+			}
+			
+			else
+			{
+				System.out.println("The actual text of the login web page is NOT MATCHING with the expected text -FAIL ");
+				String LoginPageTextReults=" FAIL";
+				TestDataRow.createCell(3).setCellValue(LoginPageTextReults);
+			}
+			
+		
+			
+			System.out.println("------------------------------------------------------------------");
+		}
+		
+		
+
+	 	@Test(priority=2)
+		public void loginWithData() throws IOException 
+		{
+//			testDataFile =new FileInputStream("./src/com/OrangeHRM_Inheritance/AddEmployeeTestSheet.xlsx");
+//			workbook =new XSSFWorkbook(testDataFile);
+//			sheet = workbook.getSheet("Sheet1");
+			Row TestDataRow=sheet.getRow(1);
+			Cell TestDataRowofCell=TestDataRow.getCell(3);
+			String invalidUsername =TestDataRowofCell.getStringCellValue();			
+			System.out.println("Username of invalid test data is  "+" = " +invalidUsername);
+			By usernameProperty=By.id("txtUsername");
+			WebElement usernamefield=driver.findElement(usernameProperty);
+			usernamefield.sendKeys(invalidUsername);
+			
+
+			TestDataRowofCell=TestDataRow.getCell(4);
+			String invalidPassword =TestDataRowofCell.getStringCellValue();			
+			System.out.println("Password of invalid test data is  "+" = " +invalidPassword);
+			By passwordProperty=By.id("txtPassword");
+			WebElement passwordfield=driver.findElement(passwordProperty);
+			passwordfield.sendKeys(invalidUsername);
+			
+			By loginProperty=By.id("btnLogin");
+			WebElement loginbutton=driver.findElement(loginProperty);
+			loginbutton.click();
+			
+			By spanMessegeProperty=By.id("spanMessage");
+			WebElement spanMessege=driver.findElement(spanMessegeProperty);
+			String actuallogipagetext=spanMessege.getText();
+			TestDataRow.createCell(6).setCellValue(actuallogipagetext);
+			System.out.println("Actual login page text after invalid test data "+"-"+actuallogipagetext);
+			
+			TestDataRowofCell=TestDataRow.getCell(5);
+			String expectedloginpagetext =TestDataRowofCell.getStringCellValue();
+			System.out.println("Expected login page text after invalid test data "+"-"+expectedloginpagetext);
+			
+			if(actuallogipagetext.equals(expectedloginpagetext))
+			{
+				System.out.println("Login with invalid is done and it is not directed to homepage-PASS");
+				String LoginPageTextReults="PASS";
+				TestDataRow.createCell(7).setCellValue(LoginPageTextReults);
+			}
+			else
+			{
+				String LoginPageTextReults="FAIL";
+				TestDataRow.createCell(7).setCellValue(LoginPageTextReults);	
+			}
+			System.out.println("------------------------------------------------------------------");
+			
+			driver.navigate().back();
+			
+		
+			String validUsername="nareshgoudmetri";
+			usernamefield.clear();
+			usernamefield.sendKeys(validUsername);
+			System.out.println("valid username given as "+validUsername);
+			
+			String validPassword="Naresh@1406";
+			passwordfield.clear();
+			passwordfield.sendKeys(validPassword);
+			System.out.println("valid username given as "+validPassword);
+			loginbutton.click();
+			
+			System.out.println("------------------------------------------------------------------");
+			
+			//<a href="#" id="welcome" class="panelTrigger">Welcome Admin</a>
+			By welcomeAdminProperty=By.linkText("Welcome Admin");
+			WebElement welcomeAdmin=driver.findElement(welcomeAdminProperty);
+			String actualTitleOfHomePage=welcomeAdmin.getText();
+			Cell actualTitleOfHomePageCell=TestDataRow.createCell(9);
+			actualTitleOfHomePageCell.setCellValue(actualTitleOfHomePage);
+			System.out.println("Actual tile of the Homepage is  "+"-"+actualTitleOfHomePage );
+			Cell expectedTitleOfHomePageCell=TestDataRow.getCell(8);
+			String expectedTitleOfHomePage=expectedTitleOfHomePageCell.getStringCellValue();
+			System.out.println("Expected tile of the Homepage is  "+"-"+expectedTitleOfHomePage );
+			
+			
+				if(actualTitleOfHomePage.contains(expectedTitleOfHomePage))
+				{
+					System.out.println("The actual title of the Home page is CONTAINSthe expected title -PASS ");
+					Cell HomepageResultcell=TestDataRow.createCell(10);
+					HomepageResultcell.setCellValue("The actual title of the Home page is CONTAINSthe expected title -PASS");
+				}
+				else
+				{
+					System.out.println("The actual title of the Home page is NOT CONTAINS the expected title -FAIL ");
+					Cell HomepageResultcell=TestDataRow.createCell(10);
+					HomepageResultcell.setCellValue("The actual title of the Home page is NOT CONTAINS the expected title -FAIL");
+				}	
+				
+			
+				System.out.println("------------------------------------------------------------------");
+			
+			
+					
+		
+
+		}
+	 		@Test(priority=6)
+	 		public void excel_save() throws IOException {
+			FileOutputStream AddEmployyeDataResults =new FileOutputStream("./src/main/java/com/OrangeHRMApplicationTestDataFiles/AddEmployeeTestSheet.xlsx");
+			workbook.write(AddEmployyeDataResults);
+	 		}
+
+		
+
+		
+
+	}
+	
+
+
